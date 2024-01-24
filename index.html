@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>player</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            font-family: 'Manrope', sans-serif;
+        }
+        .hide{
+            display:hidden;
+        }
+        .fa-brands{
+          font-size:30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar flex">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                    </div>
+                        <ul tabindex="0" class=" menu dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Homepage</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li><li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                  <a class="btn btn-ghost text-xl">Hockey </a>
+                </div>
+                <div class="navbar-center hidden sm:block">
+                    <ul class="flex gap-x-5 ">
+                        <li><a><span class="text-[#FF4240]">Home</span></a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li><li>
+                        <li><a>Contact</a></li>
+                    </ul>
+            </div>
+                <div class="navbar-end">
+                  <button class="btn btn-ghost btn-circle hidden sm:block">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                  </button>
+                  <button class="btn bg-[#FF4240] text-[#FFF]">Get Ticket</button>
+                </div>
+              </div>
+        </nav>
+    </header>
+    <main>
+        <div class="carousel w-full h-[500px] mt-3">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="w-full" />
+              <div class="bg-[#131318] mx-0 mt-1 hidden lg:block absolute right-8 bottom-8 rounded-md px-3">
+                <h2 class="text-xl font-extrabold text-[#FFFFFF] ">Meet all the heroes from the field</h2>
+                <h3 class="text-base font-medium text-slate-400 ">We have the best quality all over the country with best reputation.
+                    <br>All the players has come from our club</h3>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>   
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="Images/images.jpeg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+          </div>
+          <div class="bg-[#131318] mx-0 mt-1 lg:hidden">
+            <h2 class="text-4xl font-extrabold text-[#FFFFFF] text-center">Meet all the heroes from the field</h2>
+            <h3 class="text-base font-medium text-[#ffffff99] text-center">We have the best quality all over the country with best reputation.All the the players has come from our club</h3>
+          </div>
+        <h1 class="text-center text-[#131318] font-extrabold mt-3">Professional Hockeys Club</h1>
+        <h3 class="text-center text-[#13131899] font-medium">Here are the all Stats of our hockey Club</h3>
+        <div class="lg:flex mt-10 lg:justify-center lg:gap-20">
+            <div class="mt-5">
+                <div class="radial-progress relative lg:left-[50px] left-[43%] text-[#FF4240] " style="--value:87;" role="progressbar"><span class="text-black">87%</span></div>
+                <div class="text-center">Player Facility</div>
+                <div class="text-center">Best facilities for players</div>
+            </div>
+            <div class="mt-5">
+                <div class="radial-progress relative lg:left-[88px] left-[43%] text-[#49D293]" style="--value:95;" role="progressbar"><span class="text-black">95%</span></div>
+                <div class="text-center">Experienced Coach</div>
+                <div class="text-center">Coaches having more than 10 years</div>
+            </div>
+            <div class="mt-5 ">
+                <div class="radial-progress relative lg:left-[25px] left-[43%] text-[#FFB546]" style="--value:90;" role="progressbar"><span class="text-black">90%</span></div>
+                <div class="text-center">Senior Player</div>
+                <div class="text-center">Most senior players</div>
+            </div>
+            <div class="mt-5 ">
+                <div class="radial-progress relative lg:left-[62px] left-[43%] text-[#4C8DF1]" style="--value:80;" role="progressbar"><span class="text-black">80%</span></div>
+                <div class="text-center">Training Ground</div>
+                <div class="text-center">Having 10+ training grounds</div>
+            </div>
+        </div>
+       <h1 class="mt-3 text-center font-extrabold text-[#131318] text-2xl">Program Sections</h1>
+       <h3 class="mt-3 text-center font-medium text-base text-[#13131899]">Choose your desired program you are dreaming to </h3>
+       <div class="lg:grid lg:grid-cols-2 lg:gap-x-4">
+          <div class=" rounded-2xl py-12 lg:py-20 px-6 w-full h-[200px] bg-[url(../images/2.png)] bg-center bg-cover mt-4">
+            <h1 class="font-extrabold mb-1 text-[#fff] text-xl">Junior Program</h1>
+            <p class="font-medium mb-2 text-[#fff] text-[14px]">Our begginer section of the club.</p>
+            <button class="btn w-36 text-[#fff] text-xs font-extrabold bg-[#FF4240]">Register Now</button>
+          </div>
+          <div class="rounded-2xl py-12 lg:py-20 px-6 w-full h-[200px] bg-[url(../images/3.png)] bg-center bg-cover mt-4">
+            <h1 class="font-extrabold mb-1 text-[#fff] text-xl">Teenager Program</h1>
+            <p class="font-medium mb-2 text-[#fff] text-[14px]">Our intermediate section of the club.</p>
+            <button class="btn w-36 text-[#fff] text-xs font-extrabold bg-[#FF4240]">Register Now</button>
+          </div>
+          <div class="rounded-2xl lg:col-span-2 py-12 lg:py-20J px-6 w-full h-[200px] bg-[url(../images/4.png)] bg-center bg-cover mt-4">
+            <h1 class="font-extrabold mb-1 text-[#fff] text-xl">Professional Program</h1>
+            <p class="font-medium mb-2 text-[#fff] text-[14px]">The highest section of the club.</p>
+            <button class="btn w-36 text-[#fff] text-xs font-extrabold bg-[#FF4240]">Register Now</button>
+          </div>
+       </div>
+       <h1 class="text-center text-[#131318] font-extrabold mt-3">Our New Products</h1>
+       <h3 class="text-center text-[#13131899] font-medium">Here is our exclusive products we provide</h3>
+       <div class="lg:grid lg:grid-cols-2">
+        <div class=" lg:flex px-4 py-4 lg:items-center lg:justify-between rounded-lg">
+          <img src="Images/5.png" alt="" class="w-full lg:w-2/4 ">
+          <div class="lg:mr-60 lg:ml-8 lg:mb-4">
+            <div class="flex items-start justify-start mt-4">
+              <div class="flex items-center">
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                </div>
+                <p class="ml-1 text-[#13131880] text-base font-medium">5.0</p>
+              </div>
+              <div class="flex items-center ml-14">
+                <i class="fa fa-eye ml-1 text-[#13131880] font-medium text-base"></i>
+                <p class="ml-2 text-[#13131880] text-base font-medium">20</p>
+              </div>
+              <div class="flex items-center ml-14">
+                <i class="fa fa-heart ml-1 text-[#13131880] font-medium text-base"></i>
+                <p class="ml-2 text-[#13131880] text-base font-medium">200</p>
+              </div>
+            </div>
+            <h1 class="text-[#131318] text-xl font-extrabold mt-4">Jursey</h1>
+            <h3 class="text-[#13131899] text-base font-medium mt-2">High class premium Quality</h3>
+            <h2 class="text-[#FF4240] text-base font-extrabold mt-2">Price - $22.00</h2>
+            <div class="mt-2 flex items-center">
+              <i class="fa fa-shopping-cart font-medium text-base text-[#13131880]"></i>
+              <p class="text-[#13131880] font-medium text-base ml-2">Delivery Fee : Free</p>
+            </div>
+           </div>
+        </div>
+        <div class=" lg:flex px-4 py-4 lg:items-center lg:justify-between rounded-lg">
+          <img src="Images/6.png" alt="" class="w-full lg:w-2/4 ">
+          <div class="lg:mr-60 lg:ml-8 lg:mb-4">
+            <div class="flex items-start justify-start mt-4">
+              <div class="flex items-center">
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                </div>
+                <p class="ml-1 text-[#13131880] text-base font-medium">5.0</p>
+              </div>
+              <div class="flex items-center ml-14">
+                <i class="fa fa-eye ml-1 text-[#13131880] font-medium text-base"></i>
+                <p class="ml-2 text-[#13131880] text-base font-medium">20</p>
+              </div>
+              <div class="flex items-center ml-14">
+                <i class="fa fa-heart ml-1 text-[#13131880] font-medium text-base"></i>
+                <p class="ml-2 text-[#13131880] text-base font-medium">200</p>
+              </div>
+            </div>
+            <h1 class="text-[#131318] text-xl font-extrabold mt-4">Football</h1>
+            <h3 class="text-[#13131899] text-base font-medium mt-2">High class premium Quality</h3>
+            <h2 class="text-[#FF4240] text-base font-extrabold mt-2">Price - $22.00</h2>
+            <div class="mt-2 flex items-center">
+              <i class="fa fa-shopping-cart font-medium text-base text-[#13131880]"></i>
+              <p class="text-[#13131880] font-medium text-base ml-2">Delivery Fee : Free</p>
+            </div>
+           </div>
+        </div>
+        <div class=" lg:flex px-4 py-4 lg:items-center lg:justify-between rounded-lg">
+          <img src="Images/7.png" alt="" class="w-full lg:w-2/4 ">
+          <div class="lg:mr-60 lg:ml-8 lg:mb-4">
+            <div class="flex items-start justify-start mt-4">
+              <div class="flex items-center">
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                </div>
+                <p class="ml-1 text-[#13131880] text-base font-medium">5.0</p>
+              </div>
+              <div class="flex items-center ml-14">
+                <i class="fa fa-eye ml-1 text-[#13131880] font-medium text-base"></i>
+                <p class="ml-2 text-[#13131880] text-base font-medium">20</p>
+              </div>
+              <div class="flex items-center ml-14">
+                <i class="fa fa-heart ml-1 text-[#13131880] font-medium text-base"></i>
+                <p class="ml-2 text-[#13131880] text-base font-medium">200</p>
+              </div>
+            </div>
+            <h1 class="text-[#131318] text-xl font-extrabold mt-4">Cap</h1>
+            <h3 class="text-[#13131899] text-base font-medium mt-2">High class premium Quality</h3>
+            <h2 class="text-[#FF4240] text-base font-extrabold mt-2">Price - $22.00</h2>
+            <div class="mt-2 flex items-center">
+              <i class="fa fa-shopping-cart font-medium text-base text-[#13131880]"></i>
+              <p class="text-[#13131880] font-medium text-base ml-2">Delivery Fee : Free</p>
+            </div>
+           </div>
+        </div>
+        <div class=" lg:flex px-4 py-4 lg:items-center lg:justify-between rounded-lg">
+          <img src="Images/8.png" alt="" class="w-full lg:w-2/4 ">
+          <div class="lg:mr-60 lg:ml-8 lg:mb-4">
+            <div class="flex items-start justify-start mt-4">
+              <div class="flex items-center">
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                </div>
+                <p class="ml-1 text-[#13131880] text-base font-medium">5.0</p>
+              </div>
+              <div class="flex items-center ml-14">
+                <i class="fa fa-eye ml-1 text-[#13131880] font-medium text-base"></i>
+                <p class="ml-2 text-[#13131880] text-base font-medium">20</p>
+              </div>
+              <div class="flex items-center ml-14">
+                <i class="fa fa-heart ml-1 text-[#13131880] font-medium text-base"></i>
+                <p class="ml-2 text-[#13131880] text-base font-medium">200</p>
+              </div>
+            </div>
+            <h1 class="text-[#131318] text-xl font-extrabold mt-4">Jursey</h1>
+            <h3 class="text-[#13131899] text-base font-medium mt-2">High class premium Quality</h3>
+            <h2 class="text-[#FF4240] text-base font-extrabold mt-2">Price - $22.00</h2>
+            <div class="mt-2 flex items-center">
+              <i class="fa fa-shopping-cart font-medium text-base text-[#13131880]"></i>
+              <p class="text-[#13131880] font-medium text-base ml-2">Delivery Fee : Free</p>
+            </div>
+           </div>
+        </div>
+        <div class=" lg:flex px-4 py-4 lg:items-center lg:justify-between rounded-lg">
+          <img src="Images/9.png" alt="" class="w-full lg:w-2/4 ">
+          <div class="lg:mr-60 lg:ml-8 lg:mb-4">
+            <div class="flex items-start justify-start mt-4">
+              <div class="flex items-center">
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                </div>
+                <p class="ml-1 text-[#13131880] text-base font-medium">5.0</p>
+              </div>
+              <div class="flex items-center ml-14">
+                <i class="fa fa-eye ml-1 text-[#13131880] font-medium text-base"></i>
+                <p class="ml-2 text-[#13131880] text-base font-medium">20</p>
+              </div>
+              <div class="flex items-center ml-14">
+                <i class="fa fa-heart ml-1 text-[#13131880] font-medium text-base"></i>
+                <p class="ml-2 text-[#13131880] text-base font-medium">200</p>
+              </div>
+            </div>
+            <h1 class="text-[#131318] text-xl font-extrabold mt-4">Helmet</h1>
+            <h3 class="text-[#13131899] text-base font-medium mt-2">High class premium Quality</h3>
+            <h2 class="text-[#FF4240] text-base font-extrabold mt-2">Price - $22.00</h2>
+            <div class="mt-2 flex items-center">
+              <i class="fa fa-shopping-cart font-medium text-base text-[#13131880]"></i>
+              <p class="text-[#13131880] font-medium text-base ml-2">Delivery Fee : Free</p>
+            </div>
+           </div>
+        </div>
+        <div class=" lg:flex px-4 py-4 lg:items-center lg:justify-between rounded-lg">
+          <img src="Images/10.png" alt="" class="w-full lg:w-2/4 ">
+          <div class="lg:mr-60 lg:ml-8 lg:mb-4">
+            <div class="flex items-start justify-start mt-4">
+              <div class="flex items-center">
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                </div>
+                <p class="ml-1 text-[#13131880] text-base font-medium">5.0</p>
+              </div>
+              <div class="flex items-center ml-14">
+                <i class="fa fa-eye ml-1 text-[#13131880] font-medium text-base"></i>
+                <p class="ml-2 text-[#13131880] text-base font-medium">20</p>
+              </div>
+              <div class="flex items-center ml-14">
+                <i class="fa fa-heart ml-1 text-[#13131880] font-medium text-base"></i>
+                <p class="ml-2 text-[#13131880] text-base font-medium">200</p>
+              </div>
+            </div>
+            <h1 class="text-[#131318] text-xl font-extrabold mt-4">Football</h1>
+            <h3 class="text-[#13131899] text-base font-medium mt-2">High class premium Quality</h3>
+            <h2 class="text-[#FF4240] text-base font-extrabold mt-2">Price - $22.00</h2>
+            <div class="mt-2 flex items-center">
+              <i class="fa fa-shopping-cart font-medium text-base text-[#13131880]"></i>
+              <p class="text-[#13131880] font-medium text-base ml-2">Delivery Fee : Free</p>
+            </div>
+           </div>
+        </div>
+       </div>
+       <h1 class="text-center text-[#131318] font-extrabold mt-3">Clients Question</h1>
+       <h3 class="text-center text-[#13131899] font-medium">You can explore ourselves by FAQ</h3>
+       <div class=" mt-4 lg:flex lg:items-center lg:justify-around">
+          <img src="Images/11.png" alt="" class="w-full lg:w-1/3">
+          <div class="mt-3 ">
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" checked="checked" /> 
+              <div class="collapse-title text-xl font-medium">
+                Hockey Training
+              </div>
+              <div class="collapse-content"> 
+                <p>We have the best Hockey Trainers</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-medium">
+                Private Lessons
+              </div>
+              <div class="collapse-content"> 
+                <p>We do overtime who is lagging behind</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-medium">
+                Sky Touring
+              </div>
+              <div class="collapse-content"> 
+                <p>We do Sky Touring</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-medium">
+                Booking
+              </div>
+              <div class="collapse-content"> 
+                <p>We have best Booking</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-medium">
+                Pricings
+              </div>
+              <div class="collapse-content"> 
+                <p>Best accecories at cheap Cost</p>
+              </div>
+            </div>
+          </div>
+       </div>
+       <h1 class="text-center text-[#131318] font-extrabold mt-3">Get In Touch</h1>
+       <h3 class="text-center text-[#13131899] font-medium">Contact with us via Call and mail to join Hockey Champ</h3>
+       <div class="lg:flex lg:justify-evenly lg:items-center">
+          <div class="lg:ml-8 lg:w-2/3 w-full">
+            <div class="h-[200px] lg:w-3/4 w-full bg-[#bced6d1a] mt-3 pt-10 pl-6">
+              <img src="Images/Group 1171275317.png" alt="">
+              <h2 class="mt-2 text-[#13131866]">Phone Number</h2>
+              <h3 class="mt-2 text-[#131318]">(+62) 123-321-543</h3>
+            </div>
+            <div class="h-[200px] lg:w-3/4 w-full bg-[#fddd5f1a] mt-3 pt-10 pl-6">
+              <img src="Images/Group 1171275318.png" alt="">
+              <h2 class="mt-2 text-[#13131866]">Email</h2>
+              <h3 class="mt-2 text-[#131318]">hockeychamp@support.com</h3>
+            </div>
+            <div class="h-[200px] lg:w-3/4 w-full bg-[#629cf31a] mt-3 pt-10 pl-6">
+              <img src="Images/Group 1171275321.png" alt="">
+              <h2 class="mt-2 text-[#13131866]">Location</h2>
+              <h3 class="mt-2 text-[#131318]">152/1 Mohakhali Wireless Gate</h3>
+            </div>
+          </div>
+          <div class="lg:w-2/3 w-full lg:pr-8">
+            <div class="lg:flex">
+              <label class="form-control w-full lg:mr-2 ">
+                <div class="label">
+                  <span class="label-text text-[#131318] font-bold text-xl">What is your name?</span>
+                </div>
+                <input type="text" placeholder="Enter your full Name" class="input input-bordered w-full " />
+              </label>
+              <label class="form-control w-full lg:ml-2 ">
+                <div class="label">
+                  <span class="label-text text-[#131318] font-bold text-xl">Email</span>
+                </div>
+                <input type="text" placeholder="Enter your Email" class="input input-bordered w-full " />
+              </label>
+            </div>
+            <div class="lg:flex">
+              <label class="form-control w-full lg:mr-2 ">
+                <div class="label">
+                  <span class="label-text text-[#131318] font-bold text-xl">Subject</span>
+                </div>
+                <input type="text" placeholder="Enter your Subject" class="input input-bordered w-full " />
+              </label>
+              <label class="form-control w-full lg:ml-2">
+                <div class="label">
+                  <span class="label-text text-[#131318] font-bold text-xl">Phone Number</span>
+                </div>
+                <input type="text" placeholder="Enter your Phone Number" class="input input-bordered w-full " />
+              </label>
+            </div>
+            <label class="form-control w-full ">
+              <div class="label">
+                <span class="label-text text-[#131318] font-bold text-xl">Message</span>
+              </div>
+              <input type="text" placeholder="Write Somethng" class="input input-bordered w-full h-[200px]" />
+            </label>
+            <button class="btn w-full text-[#fff] text-xs font-extrabold bg-[#FF4240] mt-2">Send Message</button>
+          </div>
+       </div>
+       <div class="bg-[#13131808] mt-3 pt-4 h-[100px]">
+            <p class="text-[#131318] text-center text-2xl font-extrabold">Social Media</p>
+            <ul class="flex pt-3 gap-[30px] justify-center">
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-github"></i></li>
+            </ul>
+       </div>
+    </main>
+    <footer class="mt-5 lg:flex lg:justify-around bg-[#131318] pt-8">
+      <div class="">
+        <h2 class="text-[#FFFFFF] font-extrabold text-center">Get In Touch</h2>
+        <p class="text-[#ffffff99] font-medium text-center">To fulfill your dream Sign up with us</p>
+        <div class="flex items-center justify-center">
+            <img src="Images/Frame.png" alt="">
+            <p class="text-[#ffffff99] font-medium">hockeychamps@support.com</p>
+        </div>
+        <div class="flex items-center justify-center">
+          <img src="Images/Frame (1).png" alt="">
+          <p class="text-[#ffffff99] font-medium">(+62) 123-321-543</p>
+        </div>
+      </div>  
+      <div class="flex gap-[60px] justify-center">
+        <div>
+          <h2 class="font-extrabold text-[#FFFFFF] ">Company</h2>
+          <ul class="text-[#ffffff99] font-medium ">
+            <li>About Us</li>
+            <li>Leadership</li>
+            <li>Careers</li>
+            <li>New & Article</li>
+            <li>Local Notice</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="font-extrabold text-[#FFFFFF] ">Support</h2>
+          <ul class="text-[#ffffff99] font-medium ">
+            <li>Help Centre</li>
+            <li>FAQ</li>
+            <li>Careers</li>
+            <li>Ticket Support</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <h2 class="font-extrabold text-[#FFFFFF] text-center">Services</h2>
+        <ul class="text-[#ffffff99] font-medium text-center">
+          <li>Academy</li>
+          <li>Group Lesson</li>
+          <li>Private Lesson</li>
+          <li>Hockeys for kids</li>
+          <li>Hockeys for Adult</li>
+        </ul>
+      </div>
+    </footer>
+</body>
+</html>
